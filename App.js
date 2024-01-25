@@ -1,7 +1,7 @@
 // imports
 
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 // create core react element
 
@@ -27,7 +27,7 @@ const heading =
                 React.createElement(
                     "h1",
                     {},
-                    "Heading 2"
+                    "Heading 3"
                 )
             ]
 
