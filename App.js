@@ -1,3 +1,8 @@
+// imports
+
+import React from "react";
+import ReactDOM from "react-dom";
+
 // create core react element
 
 const heading =

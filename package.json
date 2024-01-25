@@ -1,0 +1,29 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "learn react",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjiThHubgit/Learn-React.git"
+  },
+  "keywords": [
+    "learn",
+    "react"
+  ],
+  "author": "Ajith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AjiThHubgit/Learn-React/"
+  },
+  "homepage": "https://github.com/AjiThHubgit/Learn-React#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
