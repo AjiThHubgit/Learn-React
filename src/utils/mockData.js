@@ -1,48 +1,4 @@
-// imports
-
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const Header = () => {
-    
-   return (
-        <div className="header d-flex-sb align-item-center">
-            <div>
-                <img className="logo" style={{width:'90px'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5VVjFVynYym8lULxPLCltlGNcgBnl4u1wtZXVDs7kSKZ8-pEm1Wpo3PMfyQ&s" alt="" />
-            </div>
-            <div className="nav-items">
-                <ul className="d-flex g-30">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-   );
-};
-
-const RestaurentCard = (props) => {
-
-    console.log(props.resData.info);
-
-    const {
-        cloudinaryImageId,
-        name,
-        cuisines,
-        avgRating
-    } = props.resData.info;
-    return (
-        <div className="res-card">
-            <img className="res-logo w-100" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId} alt="res-logo" />
-            <h3>{name}</h3>
-            <h4>{cuisines.join(", ")}</h4>
-            <h4>{avgRating}</h4>
-        </div>
-    )
-}
-
-const resList = [
+ const resList = [
     {
         "info": {
             "id": "15744",
@@ -1463,37 +1419,4 @@ const resList = [
     }
 ]
 
-const Body = () => {
-    return (
-        <div className="body">
-            <div className="search">Search</div>
-            <div className="res-container d-flex flex-wrap">
-                {resList.map((restaurant) => (
-                    <RestaurentCard key={restaurant.info.id} resData={restaurant} />
-                ))}
-            </div>
-        </div>
-    );
-};
-
-const AppLayout = () => {
-
-    return (
-        <div className="app">
-            <Header />
-            <Body />
-        </div>
-    );
-};
-
-// creat react dom and apppend root inside it
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// render the dom
-
-// root.render(jsxHeading); // React Element
-
-root.render(<AppLayout />); // React Component
-
-
+export default resList;
