@@ -1,3 +1,29 @@
-.light_blue {
-    color: lightblue;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common style */
+
+.w-100 {
+    width: 100%;
+}
+/* common style */
+
+.header {
+
+    height: 75px;
+    background-color: lightcyan;
+    padding: 0 30px;
+}
+
+.header > .nav-items > ul > li {
+    list-style-type: none;
+}
+
+.res-card {
+    width: 250px;
+    border: 1px solid gray;
+    padding: 5px;
 }

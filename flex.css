@@ -1,0 +1,17 @@
+.d-flex {
+    display: flex;
+}
+.align-item-center {
+    align-items: center;
+}
+.d-flex-sb {
+    display: flex;
+    justify-content: space-between;
+}
+.g-30 {
+    gap: 30px;
+}
+.flex-wrap {
+
+    flex-flow: wrap;
+}
